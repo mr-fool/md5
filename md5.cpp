@@ -18,7 +18,7 @@ int main()
     std::thread input(userinput);
 
     //All variables are unsigned 32 bit and wrap modulo 2^32 when calculating
-    unsigned int[64] s, K;
+    unsigned int s[64], K[64];
     unsigned int i;
 
     //s specifies the per-round shift amounts
@@ -40,4 +40,3 @@ int main()
 
     return 0;
 }
-
